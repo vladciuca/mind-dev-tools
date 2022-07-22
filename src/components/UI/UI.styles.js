@@ -1,17 +1,15 @@
 import styled from "styled-components";
 
 export const Glass = styled.div`
-  background: rgba(255, 255, 255, 0.2);
+  background: ${({ theme }) => theme.card};
   border-radius: 16px;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 4px 30px ${({ theme }) => theme.shadow};
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  border: 1px solid ${({ theme }) => theme.cardBorder};
 `;
 
-export const Spacer = styled.div`
-  height: 250px;
-`;
+//App components
 
 export const Container = styled.div`
   display: flex;
@@ -21,34 +19,71 @@ export const Container = styled.div`
   padding: 2rem 0;
 `;
 
-export const Text = styled.div`
-  font-size: 1.5rem;
-  padding: 0.3rem 0;
+//TEXT components
+
+export const Paragraph = styled.div`
+  text-align: justify;
+  text-justify: inter-word;
+  padding: 1rem 3rem;
 `;
 
-export const InfoText = styled.div`
+export const Text = styled.span`
   font-size: 1.2rem;
   line-height: 2.2rem;
-  padding: 1.5rem 3rem;
+  color: ${({ theme }) => theme.text};
+`;
+
+export const TextLight = styled.span`
+  font-size: 1.1rem;
+  line-height: 2.1rem;
   color: ${({ theme }) => theme.textLight};
 `;
 
-export const SectionTitle = styled.div`
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 2rem;
-  padding: 2rem 0;
+export const Source = styled.span`
+  text-decoration: underline;
 `;
 
-export const SuccessHighlight = styled.span`
-  background-color: ${({ theme }) => theme.success};
+export const TextHighlight = styled.span`
+  background-color: ${({ theme }) => theme.textHighlight};
 `;
 
 export const PrimaryHighlight = styled.span`
   background-color: ${({ theme }) => theme.primary};
 `;
 
+export const SecondaryHighlight = styled.span`
+  background-color: ${({ theme }) => theme.secondary};
+`;
+
 export const AccentHighlight = styled.span`
   background-color: ${({ theme }) => theme.accent};
+`;
+
+//SECTION components
+
+export const SectionTitle = styled.div`
+  font-size: 1.7rem;
+  padding: 2rem 3rem;
+`;
+
+export const InfoGraph = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.5rem;
+  margin: auto;
+  width: 50%;
+`;
+
+export const InfoGraphItem = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
+export const InfoGraphIcon = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: ${({ theme }) => theme.primary};
 `;

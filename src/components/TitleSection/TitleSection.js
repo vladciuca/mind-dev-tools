@@ -13,7 +13,7 @@ export const TitleSection = () => (
         install mind-dev-tools
         <Indicator>_</Indicator>
       </Title>
-      <SubText> Reality is conjured through Imagination!</SubText>
+      <SubText>Reality is conjured through Imagination!</SubText>
     </Container>
   </>
 );
