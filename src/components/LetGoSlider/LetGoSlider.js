@@ -2,9 +2,14 @@ import React from "react";
 import { AiOutlinePlus, AiOutlineMinus } from "react-icons/ai";
 import { Input, InputContainer, RangeSymbol } from "./LetGoSlider.styles";
 
-export const LetGoSlider = ({ range, handleChange }) => (
+export const LetGoSlider = ({
+  range,
+  handleChange,
+  handleIncrease,
+  handleDecrease,
+}) => (
   <InputContainer>
-    <RangeSymbol>
+    <RangeSymbol onClick={handleDecrease}>
       <AiOutlineMinus />
     </RangeSymbol>
     <Input
@@ -14,7 +19,7 @@ export const LetGoSlider = ({ range, handleChange }) => (
       value={range}
       onChange={handleChange}
     />
-    <RangeSymbol>
+    <RangeSymbol onClick={handleIncrease}>
       <AiOutlinePlus />
     </RangeSymbol>
   </InputContainer>

@@ -7,6 +7,7 @@ export const InputContainer = styled.div`
 `;
 
 export const RangeSymbol = styled.div`
+  cursor: pointer;
   background: ${({ theme }) => theme.cardBorder};
   border-radius: 999px;
   width: 22px;

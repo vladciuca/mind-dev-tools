@@ -1,7 +1,9 @@
 import styled from "styled-components";
-import { Glass } from "../UI/UI.styles";
 
-export const Header = styled(Glass)`
+export const Header = styled.div`
+  background: ${({ theme }) => theme.card};
+  box-shadow: 0 4px 30px ${({ theme }) => theme.shadow};
+  border: 1px solid ${({ theme }) => theme.cardBorder};
   width: 100%;
   border-radius: 0.5rem;
   display: flex;

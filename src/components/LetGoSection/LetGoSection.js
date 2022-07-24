@@ -73,6 +73,40 @@ export const LetGoSection = () => {
     setRange(actionRange);
   };
 
+  const handleIncrease = () => {
+    const newData = data.map((obj) => {
+      if (obj.id === "top" && obj.value < 10) {
+        return { ...obj, value: ++obj.value };
+      }
+      if (obj.id === "bottom" && obj.value > -10) {
+        return { ...obj, value: --obj.value };
+      }
+      return obj;
+    });
+
+    const actionRange = newData.find((obj) => obj.id === "top");
+
+    setData(newData);
+    setRange(actionRange.value);
+  };
+
+  const handleDecrease = () => {
+    const newData = data.map((obj) => {
+      if (obj.id === "top" && obj.value > 4) {
+        return { ...obj, value: --obj.value };
+      }
+      if (obj.id === "bottom" && obj.value < -4) {
+        return { ...obj, value: ++obj.value };
+      }
+      return obj;
+    });
+
+    const actionRange = newData.find((obj) => obj.id === "top");
+
+    setData(newData);
+    setRange(actionRange.value);
+  };
+
   return (
     <>
       <SectionTitle>{">"} Let Go!</SectionTitle>
@@ -93,7 +127,12 @@ export const LetGoSection = () => {
       <InfoGraph>
         <AreaChart chartData={chartData} />
       </InfoGraph>
-      <LetGoSlider range={range} handleChange={handleChange} />
+      <LetGoSlider
+        range={range}
+        handleChange={handleChange}
+        handleIncrease={handleIncrease}
+        handleDecrease={handleDecrease}
+      />
 
       <Paragraph>
         <Text>

@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 export const Glass = styled.div`
   background: ${({ theme }) => theme.card};
-  border-radius: 16px;
   box-shadow: 0 4px 30px ${({ theme }) => theme.shadow};
   backdrop-filter: blur(5px);
   -webkit-backdrop-filter: blur(5px);
   border: 1px solid ${({ theme }) => theme.cardBorder};
+  z-index: 999999;
 `;
 
 //App components
@@ -17,6 +17,10 @@ export const Container = styled.div`
   align-items: center;
   justify-content: center;
   padding: 2rem 0;
+`;
+
+export const Spacer = styled.div`
+  height: 200px;
 `;
 
 //TEXT components
@@ -59,11 +63,25 @@ export const AccentHighlight = styled.span`
   background-color: ${({ theme }) => theme.accent};
 `;
 
+export const PrimaryColor = styled.span`
+  color: ${({ theme }) => theme.primary};
+`;
+
+export const SecondaryColor = styled.span`
+  color: ${({ theme }) => theme.secondary};
+`;
+export const AccentColor = styled.span`
+  color: ${({ theme }) => theme.accent};
+`;
+
 //SECTION components
 
 export const SectionTitle = styled.div`
   font-size: 1.7rem;
-  padding: 2rem 3rem;
+  padding: 0 3rem;
+  padding-bottom: 2rem;
+  padding-top: 5rem;
+  line-height: 2.3rem;
 `;
 
 export const InfoGraph = styled.div`

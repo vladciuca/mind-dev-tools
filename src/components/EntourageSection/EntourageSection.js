@@ -11,14 +11,13 @@ import {
   InfoGraphItem,
   PrimaryHighlight,
   SecondaryHighlight,
+  Source,
 } from "../UI/UI.styles";
 import {
   InfoGraphArea,
   EnlargeText,
-  IconContainer,
   IconBack,
   IconFront,
-  TextContainer,
 } from "./EntourageSection.styles";
 
 export const EntourageSection = () => (
@@ -34,38 +33,50 @@ export const EntourageSection = () => (
 
     <InfoGraphItem>
       <Text>
-        You are the average of the <EnlargeText>5</EnlargeText> people you spend
-        most time with!
+        "You are the average of the <EnlargeText>5</EnlargeText> people you
+        spend most time with!"
       </Text>
+    </InfoGraphItem>
+
+    <InfoGraphItem>
+      <TextLight>
+        {"("}source:{" "}
+        <TextHighlight>
+          <Source>
+            <Text>Jim Rohn</Text>
+          </Source>
+        </TextHighlight>
+        {")"}
+      </TextLight>
     </InfoGraphItem>
 
     <InfoGraphArea>
       <InfoGraphItem>
         <div style={{ position: "relative" }}>
           <IconBack>
-            <FaUsers size="5rem" />
+            <FaUsers size="4rem" />
           </IconBack>
 
           <div
             style={{
               position: "absolute",
-              top: "11px",
+              top: "9px",
               left: "50%",
               transform: "translateX(-50%)",
             }}
           >
             <IconFront>
-              <FaUser size="3.62rem" />
+              <FaUser size="2.9rem" />
             </IconFront>
           </div>
           <div
             style={{
               position: "absolute",
-              top: "-10px",
+              top: "-15px",
               right: "-25px",
             }}
           >
-            <BiTimeFive size="2rem" />
+            <BiTimeFive size="1.5rem" />
           </div>
         </div>
       </InfoGraphItem>
@@ -84,48 +95,6 @@ export const EntourageSection = () => (
         <SecondaryHighlight>YOU</SecondaryHighlight>
       </Text>
     </InfoGraphItem>
-
-    {/* <IconContainer>
-      <div style={{ position: "relative" }}>
-        <IconBack>
-          <FaUsers size="5rem" />
-        </IconBack>
-
-        <div
-          style={{
-            position: "absolute",
-            top: "11px",
-            left: "50%",
-            transform: "translateX(-50%)",
-          }}
-        >
-          <IconFront>
-            <FaUser size="3.62rem" />
-          </IconFront>
-        </div>
-        <div
-          style={{
-            position: "absolute",
-            top: "-10px",
-            right: "-25px",
-          }}
-        >
-          <BiTimeFive size="2rem" />
-        </div>
-      </div>
-    </IconContainer> */}
-
-    {/* <Text>
-      <EnlargeText>
-        <AccentHighlight>80</AccentHighlight>%
-      </EnlargeText>
-      ENTOURAGE +{" "}
-      <EnlargeText>
-        <PrimaryColor>20</PrimaryColor>%
-      </EnlargeText>
-      SELF = <EnlargeText>100%</EnlargeText>
-      <SuccessColor>YOU</SuccessColor>
-    </Text> */}
 
     <Paragraph>
       <TextLight>

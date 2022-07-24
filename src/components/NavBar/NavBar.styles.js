@@ -1,12 +1,16 @@
 import styled from "styled-components";
 import { Glass } from "../UI/UI.styles";
 
-export const Container = styled(Glass)`
-  width: 600px;
-  height: 100px;
+export const NavContainer = styled.div`
+  display: flex;
+  justify-content: center;
+`;
+
+export const Bar = styled(Glass)`
+  width: 90%;
+  height: 50px;
   position: fixed;
-  bottom: 5%;
-  left: 50%;
-  transform: translateX(-50%);
+  bottom: 0;
+  border-radius: 1rem 1rem 0 0;
   padding: 1rem;
 `;

@@ -5,7 +5,7 @@ export const InfoGraphArea = styled.div`
 `;
 
 export const EnlargeText = styled.span`
-  font-size: 2.2rem;
+  font-size: 1.8rem;
 `;
 
 export const IconBack = styled.span`
