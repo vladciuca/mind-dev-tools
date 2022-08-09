@@ -37,18 +37,17 @@ export const EntourageSection = () => (
         "You are the average of the <EnlargeText>5</EnlargeText> people you
         spend most time with!"
       </Text>
-    </InfoGraphText>
-
-    <InfoGraphText>
-      <TextLight>
-        {"("}source:{" "}
-        <TextHighlight>
-          <Source>
-            <Text>Jim Rohn</Text>
-          </Source>
-        </TextHighlight>
-        {")"}
-      </TextLight>
+      <div>
+        <TextLight>
+          {"("}source:{" "}
+          <TextHighlight>
+            <Source>
+              <Text>Jim Rohn</Text>
+            </Source>
+          </TextHighlight>
+          {")"}
+        </TextLight>
+      </div>
     </InfoGraphText>
 
     <InfoGraphArea>
