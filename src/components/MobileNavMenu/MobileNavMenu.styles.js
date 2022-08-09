@@ -33,7 +33,6 @@ export const MobileNavMenuWrapper = styled.ul`
   grid-template-rows: repeat(6, 60px);
   text-align: center;
   padding-left: 0;
-  padding-top: 40%;
   grid-gap: 30px;
   margin: 0 150px;
 
