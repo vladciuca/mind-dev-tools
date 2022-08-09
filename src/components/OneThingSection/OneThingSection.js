@@ -40,19 +40,19 @@ export const OneThingSection = () => (
         <InfoGraphItem>
           <div style={{ position: "relative", zIndex: 1 }}>
             <InfoGraphIcon>
-              <GiPlainCircle size="3rem" />
+              <GiPlainCircle size="2.5rem" />
             </InfoGraphIcon>
             <div
               style={{
                 position: "absolute",
-                top: "-22px",
+                top: "-19px",
                 left: "50%",
                 transform: "translateX(-50%)",
                 zIndex: -1,
               }}
             >
               <NegativeColor>
-                <BiExpand size="6rem" />
+                <BiExpand size="5rem" />
               </NegativeColor>
             </div>
           </div>
@@ -65,12 +65,12 @@ export const OneThingSection = () => (
         <InfoGraphItem>
           <div style={{ position: "relative", zIndex: 1 }}>
             <InfoGraphIcon>
-              <GiPlainCircle size="3rem" />
+              <GiPlainCircle size="2.5rem" />
             </InfoGraphIcon>
             <div
               style={{
                 position: "absolute",
-                top: "-16px",
+                top: "-19px",
                 left: "50%",
                 transform: "translateX(-50%)",
                 zIndex: -1,
@@ -79,7 +79,7 @@ export const OneThingSection = () => (
               <PositiveColor>
                 <ImArrowUpLeft
                   style={{ transform: "rotate(45deg)" }}
-                  size="2rem"
+                  size="1.8rem"
                 />
               </PositiveColor>
             </div>
