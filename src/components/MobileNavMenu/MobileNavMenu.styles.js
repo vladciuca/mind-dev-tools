@@ -35,8 +35,8 @@ export const MobileNavMenuWrapper = styled.ul`
   padding-left: 0;
   grid-gap: 30px;
   margin: 0 150px;
-
-  @media screen and (max-width: 480px) {
+  padding-top: ${({ isOpen }) => (isOpen ? css`40%` : `0`)} @media screen and
+    (max-width: 480px) {
     margin: 0 50px;
   }
 `;

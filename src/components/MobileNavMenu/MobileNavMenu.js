@@ -14,7 +14,7 @@ export const MobileNavMenu = ({ isOpen, toggle }) => {
       <CloseIcon onClick={toggle}>
         <AiOutlineCloseCircle />
       </CloseIcon>
-      <MobileNavMenuWrapper>
+      <MobileNavMenuWrapper isOpen={isOpen}>
         <MobileNavMenuLink
           smooth={true}
           duration={500}
