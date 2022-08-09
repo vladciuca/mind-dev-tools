@@ -41,36 +41,32 @@ export const ChangeSection = () => (
             <Text
               style={{
                 position: "absolute",
-                top: "-2px",
+                top: "0px",
                 left: "50%",
                 transform: "translateX(-50%)",
               }}
             >
               <TbArrowsSort />
-              {/* IDENTITY */}
-
-              <Text
-                style={{
-                  position: "absolute",
-                  top: "-25px",
-                  left: "50%",
-                  transform: "translateX(-50%)",
-                }}
-              >
-                <TbArrowsSort />
-                {/* "STORIES" */}
-                <Text
-                  style={{
-                    position: "absolute",
-                    top: "-30px",
-                    left: "50%",
-                    transform: "translateX(-50%)",
-                  }}
-                >
-                  <TbArrowsSort />
-                  {/* "ACTIONS" */}
-                </Text>
-              </Text>
+            </Text>
+            <Text
+              style={{
+                position: "absolute",
+                top: "-28px",
+                left: "50%",
+                transform: "translateX(-50%)",
+              }}
+            >
+              <TbArrowsSort />
+            </Text>
+            <Text
+              style={{
+                position: "absolute",
+                top: "-56px",
+                left: "50%",
+                transform: "translateX(-50%)",
+              }}
+            >
+              <TbArrowsSort />
             </Text>
           </IdentityCircle>
         </StoriesCircle>
