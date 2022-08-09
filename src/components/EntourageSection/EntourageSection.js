@@ -61,13 +61,13 @@ export const EntourageSection = () => (
           <div
             style={{
               position: "absolute",
-              top: "10px",
+              top: "9px",
               left: "50%",
               transform: "translateX(-50%)",
             }}
           >
             <IconFront>
-              <FaUser size="3.55rem" />
+              <FaUser size="3.66rem" />
             </IconFront>
           </div>
           <div
