@@ -3,19 +3,22 @@ import { InfoGraph, TextLight } from "../UI/UI.styles";
 
 export const InfoGraphContainer = styled(InfoGraph)`
   flex-flow: row wrap;
-  justify-content: flex-center;
+  justify-content: center;
 `;
 
 export const InfoGraphSubText = styled(TextLight)`
-  padding: 2rem;
   text-align: center;
+  padding: 2rem 6rem;
+  @media (max-width: 768px) {
+    padding: 2rem;
+  }
 `;
 
 export const InfoGraphSplit = styled.div`
   display: flex;
   box-sizing: border-box;
   flex-direction: column;
-  padding-top: 2rem;
+  padding-top: 3rem;
   @media (max-width: 768px) {
     flex-basis: 100%;
   }

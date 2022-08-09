@@ -34,7 +34,7 @@ export const ChangeSection = () => (
       </TextLight>
     </SectionTitle>
 
-    <InfoGraph>
+    <InfoGraph style={{ padding: "2rem 0" }}>
       <ActionsCircle>
         <StoriesCircle>
           <IdentityCircle>

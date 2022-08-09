@@ -24,10 +24,11 @@ export const SectionContainer = styled.div`
 `;
 
 export const SectionDivider = styled.div`
-  width: 100%;
-  height: 3px;
+  width: 90%;
+  height: 1px;
   background: ${({ theme }) => theme.negative};
-  margin: 3rem 0;
+  margin: 3rem auto;
+  border-radius: 20px;
 `;
 
 export const Container = styled.div`
@@ -135,9 +136,9 @@ export const InfoGraphIcon = styled.div`
 export const InfoGraphText = styled.div`
   text-align: center;
   @media (max-width: 768px) {
-    padding: 0 1rem;
+    padding: 1rem;
   }
   @media (min-width: 768px) {
-    padding: 0;
+    padding: 1rem 0;
   }
 `;

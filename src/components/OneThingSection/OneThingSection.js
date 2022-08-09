@@ -1,7 +1,7 @@
 import React from "react";
 import { BiExpand } from "react-icons/bi";
 import { GiPlainCircle } from "react-icons/gi";
-import { ImArrowUpLeft } from "react-icons/im";
+import { ImArrowRight } from "react-icons/im";
 import {
   Paragraph,
   SectionTitle,
@@ -70,16 +70,16 @@ export const OneThingSection = () => (
             <div
               style={{
                 position: "absolute",
-                top: "-19px",
-                left: "50%",
-                transform: "translateX(-50%)",
+                top: "60%",
+                left: "35px",
+                transform: "translateY(-60%)",
                 zIndex: -1,
               }}
             >
               <PositiveColor>
-                <ImArrowUpLeft
-                  style={{ transform: "rotate(45deg)" }}
-                  size="1.8rem"
+                <ImArrowRight
+                  // style={{ transform: "rotate(45deg)" }}
+                  size="1.7rem"
                 />
               </PositiveColor>
             </div>

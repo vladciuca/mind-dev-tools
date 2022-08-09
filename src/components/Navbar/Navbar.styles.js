@@ -88,11 +88,9 @@ export const NavLink = styled(Link)`
   padding: 0 1rem;
   height: 100%;
   cursor: pointer;
-  transition: 0.2s ease-in-out;
 
   &.active {
-    padding-top: 3px;
-    border-bottom: 3px solid ${({ theme }) => theme.negative};
+    border-bottom: 1px solid ${({ theme }) => theme.negative};
   }
 `;
 
