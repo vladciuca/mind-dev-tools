@@ -9,7 +9,8 @@ body{
             radial-gradient(ellipse at bottom, rgba(170,165,255,0.15), transparent);
   background-attachment: fixed;
   background-repeat: no-repeat;
-  color: ${({ theme }) => theme.text}
+  color: ${({ theme }) => theme.text};
+  overflow-x: hidden;
 }
 
 * {
