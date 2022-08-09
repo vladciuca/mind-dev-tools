@@ -77,7 +77,7 @@ export const NavMenu = styled.ul`
 `;
 
 export const NavItem = styled.li`
-  height: 80px;
+  height: 70px;
   font-weight: 600;
 `;
 
@@ -86,7 +86,7 @@ export const NavLink = styled(Link)`
   align-items: center;
   text-decoration: none;
   padding: 0 1rem;
-  height: 100%;
+  height: 99%;
   cursor: pointer;
 
   &.active {
